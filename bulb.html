@@ -15,6 +15,11 @@
             text-align: center;
             font-family: fantasy;
         }
+        button {
+            background-color: rgb(176, 187, 22);
+            color: rgb(49, 45, 40);
+            border-color: yellow;
+        }
     </style>
 </head>
   
@@ -28,8 +33,8 @@
     </div>
     <div class="container" style="text-align:center" id="app">
         <img v-if="isOn" src="./bulbon.gif" width="300" alt="Bulb On" />
-        <img v-else src="./off.png" width="250" style="margin-top:5px" alt="Bulb Off" />
-        <button style="margin:0px" class="btn-lg btn-warning" v-on:click="toggleBulb(isOn)"><h4>Light Switch</h4></button>
+        <img v-else src="./buulb off.jpg" width="250" style="margin-top:5px" alt="Bulb Off" />
+        <button style="margin:0px" class="btn-lg btn-warning" v-on:click="toggleBulb(isOn)"><h4>Switch</h4></button>
   
         <script src="https://unpkg.com/vue@3"></script>
         <script src="scripts.js"></script>
